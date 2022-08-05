@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,51 +8,40 @@
     <title>To Do List</title>
     <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <h1>To do List</h1>
+        <h1>To do List </h1>
+        <h3 id="horas"></h3>   
     </header>
+    
 
     <div class="bloco">
-        <div class="bbloco">
-            <section id="bsection">
-                <div class="text">
-                    Adicionar afazeres:
-                    <br><input type="text" name="ftexto" id="ftexto" class="ftexto">
-                    <input type="button" value="Adicionar" onclick="adicionar()"> 
-                    <ul class="flista" id="flista"></ul>
-                </div>
-            </section>
-        </div>
+        <section class="section">
+            <div class="text">
+                Adicionar afazeres:
+                <br><input type="text" name="ftexto" id="ftexto" class="ftexto">
+                <input type="button" value="Adicionar" onclick="adicionar()">
+                <ul class="flista" id="flista"></ul>
+            </div>
+        </section>
 
-        <div class="fbloco">
-                <section id="fsection">
-                    <div class="text">
-                        Fazendo:
-                        <ul id="feitos" class="feitos"></ul>
-                    </div>
-                </section>
-         </div>
+        <section class="section">
+            <div class="text">
+                Fazendo:
+                <ul id="feitos" class="feitos"></ul>
+            </div>
+        </section>
 
-         <div class="fofbloco">
-            <section id="fofsection">
-                <div class="text">
-                    Feitos:
-                    <ul id="fofeitos" class="fofeitos"></ul>
-                </div>
-            </section>
-         </div>
-
-    </div>    
-
-    <div>
-    <h3 id="horas"></h3>
+        <section class="section">
+            <div class="text">
+                Feitos:
+                <ul id="fofeitos" class="fofeitos"></ul>
+            </div>
+        </section>
     </div>
-    <!-- <footer>
-        <p>&copy; RodrigoCarvalho</p>
-    </footer> -->
-        
 
     <script src="script.js">defer</script>
 </body>
+
 </html>

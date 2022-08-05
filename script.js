@@ -117,8 +117,6 @@ function Remover() {
 
 }
 
-// código do relógio
-
 setInterval(function () {
     var novaHora = new Date()
 
