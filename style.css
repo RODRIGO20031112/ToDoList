@@ -7,7 +7,8 @@ body {
 
 header {
     color: white;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 
 }
 
@@ -31,28 +32,26 @@ header {
     background-color: white;
     padding: 15px;
     border-radius: 10px;
-    width: 90%;
     height: auto;
     box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.397);
     text-align: center;
     margin: 15px;
-    max-width: -webkit-fill-available;
+    width: 350px;
 }
 
 .bloco {
     display: grid;
     justify-content: space-around;
     text-align: center;
-}
-
-.fbloco {
-    height: 100px;
+    min-height: calc(90vh - 70px);
 }
 
 #horas {
     color: white;
     text-align: center;
-
+    margin-left: 15px;
+    font-size: 22px;
+    margin-top: 30px;
 }
 
 li {
@@ -141,4 +140,22 @@ ul#feitos {
 
 ul#fofeitos {
     padding: 0px 40px 0px 40px;
+}
+
+::marker {
+    list-style: none;
+}
+
+.footer {
+    height: 90px;
+    background-color: #2f2f2ff1;
+    text-align: center;
+    color: aliceblue;
+
+}
+
+.footer p {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
